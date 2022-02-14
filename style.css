@@ -1,0 +1,394 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: black;}
+body{
+  font-family: 'Pretendard-Regular';
+  font-size: 14px;
+  color: #4e5150;
+}
+/*header*/
+header{
+  width: 1320px; 
+  margin: auto;
+  position: relative;
+  padding-bottom: 60px;
+  margin-top: 10px;
+}
+.menu{
+  position: absolute;
+  top: 60px;
+  left: 55%;
+}
+.menu> li{
+  float: left;
+  position: relative;
+}
+.menu> li> a{
+  padding-left: 20px;
+  font-family: 'IM Fell DW Pica';
+  font-size: 22px;
+  color: #4e5150;
+  font-weight: bold;
+}
+.menu> li> a:hover{
+  color: #cfcfd3;
+}
+.icon{
+  position: absolute;
+  top: 60px;
+  left: 94%;
+}
+.icon li{
+  float: left;
+}
+.icon li a{
+  padding-left: 8px;
+}
+.icon li a:hover{
+  opacity: 0.4;
+}
+/*submenu*/
+.sub_menu a{
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'IM Fell English SC';
+  color: #4e5150;
+  font-size: 18px;
+}
+.sub_menu a:hover{
+  color: #cfcfd3;
+}
+.sub_menu{
+  display: none;
+  position: absolute;
+  width: 120%;
+}
+.menu li:hover .sub_menu{
+  display: block;
+}
+/*submenu*/
+/*header*/
+#product{
+    background: url(images/Product_bg.jpg)
+    no-repeat;
+    height: 113px;
+    margin-bottom: 100px;
+}
+#product h1{
+    font-family: 'IM Fell DW Pica';
+    text-align: center;
+    font-size: 35px;
+    padding-top: 35px;
+    color: #4e5150;
+}
+#product_inner{
+    width: 1320px;
+    margin: auto;
+    height: 3000px;
+    margin-top: -700px;
+}
+.p1 li{
+    float: left;
+    display: block;
+    height: 660px;
+}
+.k1{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #171616;
+}
+.k2{
+  margin-left: 20px;
+  margin-top: 7px;
+  color: #171616;
+}
+.k3{
+  margin-left: 20px;
+  margin-top: 60px;
+  font-size: 18px;
+  color: #171616;
+}
+.k4{
+  margin-top: 7px;
+  margin-left: 20px;
+  color: #171616;
+}
+.new{
+  border: 3px solid #dad3cc;
+  width: 48px;
+  height: 23px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.new p{
+  margin-top: 2.5px;
+  color: #171616;
+  text-align: center;
+}
+.best{
+  background-color: #dad3cc;
+  width: 54px;
+  height: 29px;
+  margin-left: 20px;
+  margin-top: 15px;
+  position: relative;
+  z-index: -1;
+}
+.best p{
+  text-align: center;
+  color: #fffffd;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+.p1 li a{
+    padding: 20px;
+}
+.p2 li{
+    float: left;
+    padding-top: 200px;
+    height: 660px;
+}
+.p2 li a{
+    padding: 20px;
+}
+.p3 li{
+    float: left;
+    padding-top: 200px;
+    height: 660px;
+}
+.p3 li a{
+    padding: 20px;
+}
+.p4 li{
+    float: left;
+    padding-top: 200px;
+    height: 660px;
+}
+.p4 li a{
+    padding: 20px;
+}
+#product_inner li img{
+  transition: all 0.8s;
+}
+#product_inner li img:hover{
+  transform: translateY(-50px);
+}
+/*popup*/
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  color: #171616;
+  z-index: 1;
+}
+.popup_inner{
+  position: absolute;
+  top: 50%;
+  left: 37.7%;
+  transform: translate(-50%, -50%);
+}
+.close{
+  text-align: right;
+  padding: 5px;
+  padding-right: 10px;
+  position: absolute;
+  top: 5%;
+  right: 0%;
+}
+.close img{
+  width: 80%;
+}
+.close img:hover{
+  opacity: 0.5;
+}
+.popup img{
+  display: block;
+}
+.popup_text{
+  width: 460px;
+  height: 515px;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  text-align: left;
+  background-color: #fffffd;
+  padding: 30px;
+}
+.popup_text1 h1{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.popup_text1 h2{
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.popup_text1 h3{
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.popup_text1 p{
+  line-height: 26px;
+}
+.popup_text2{
+  margin-top: 30px;
+  border-top: 1px dashed #171616;
+}
+.t1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 25px;
+}
+.t2{
+  line-height: 20px;
+}
+.order{
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+  background-color: #706e69;
+  padding: 10px 40px;
+}
+.order p{
+  font-size: 16px;
+  color: #fffffd;
+}
+.order:hover{
+  background-color: #dad3cc;
+}
+.order:hover p{
+  color: #fffffd;
+}
+/*popup*/
+#top_bg{
+  background: url('images/bg_top.png') no-repeat;
+  height: 908px;
+  margin-top: -200px;
+  opacity: 0.4;
+  position: relative;
+  z-index: -3;
+}
+#bottom_bg{
+  background: url('images/bg_bottom.png') no-repeat;
+  height: 908px;
+  margin-bottom: -700px;
+  margin-top: -100px;
+  opacity: 0.4;
+  position: relative;
+  z-index: -3;
+}
+/*Top botton*/
+.top{
+  position:fixed; 
+  bottom:50px; 
+  right:50px; 
+  display:none;
+  z-index: 3;
+}
+.top img{
+  width: 70%;
+}
+/*Top botton*/
+/*footr*/
+#footer{
+  background: url('footer/footerbg.jpg')
+  no-repeat;
+  height: 286px;
+  margin-top: 500px;
+  position: relative;
+  bottom: 0;
+}
+.footer_inner{
+  width: 1320px;
+  margin: auto;
+  padding-top: 90px;
+  position: relative;
+}
+.f1, .f2{
+  font-family: 'IM Fell English SC', serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #fffffd;
+  margin-top: -20px;
+}
+.f2{
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+.f3{
+  font-family: 'Pretendard-Regular';
+  color: #fffffd;
+  font-size: 14px;
+}
+.footer_center{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -245px;
+}
+.footer_right{
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 300px;
+}
+.r1{
+  float: right;
+}
+.r1 li{
+  float: left;
+}
+.r1 li a{
+  font-family: 'Pretendard-Regular';
+  color: #fffffd;
+}
+.r1 li a:hover{
+  opacity: 0.5;
+}
+.footer_right_icon{
+  position: absolute;
+  right: 0;
+  top: 90%;
+}
+.footer_icon{
+  float: right;
+}
+.footer_icon li{
+  float: left;
+  padding-left: 10px;
+}
+.r1 li a{
+  font-family: 'Pretendard-Regular';
+}
+.facebook:hover{
+  background: url(footer/facebook_hover.png) no-repeat
+  100% 0%;
+}
+.insta:hover{
+  background: url(footer/insta_hover.png) no-repeat
+  100% 0%;
+}
+.twitter:hover{
+  background: url(footer/twitter_hover.png) no-repeat
+  100% 0%;
+}
+.youtube:hover{
+  background: url(footer/youtube_hover.png) no-repeat
+  100% 0%;
+}
+/*footer*/
