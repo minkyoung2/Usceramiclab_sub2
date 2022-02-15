@@ -278,7 +278,7 @@ header{
 #top_bg{
   background: url('images/bg_top.png') no-repeat;
   height: 908px;
-  margin-top: -200px;
+  margin-top: -180px;
   opacity: 0.4;
   position: relative;
   z-index: -3;
