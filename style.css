@@ -79,14 +79,14 @@ header{
 #product{
     background: url(images/Product_bg.jpg)
     no-repeat;
-    height: 113px;
+    height: 95px;
     margin-bottom: 100px;
 }
 #product h1{
     font-family: 'IM Fell DW Pica';
     text-align: center;
     font-size: 35px;
-    padding-top: 35px;
+    padding-top: 25px;
     color: #4e5150;
 }
 #product_inner{
